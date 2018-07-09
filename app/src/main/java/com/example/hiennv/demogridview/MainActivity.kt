@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
 
+        bookAdapter = BookAdapter(this,listBook)
+        gvBook.adapter = bookAdapter
 
     }
 }
