@@ -1,17 +1,17 @@
 package com.example.hiennv.demogridview.listview
 
 import android.content.Context
-import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
 import java.io.InputStream
+import java.io.Serializable
 
 class Recipe(val titlte: String,
              val description: String,
              val detail: String,
              val imageUrl: String,
-             val label: String) {
+             val label: String) : Serializable{
 
     companion object {
         //Function parse json -> List<Recipe>
