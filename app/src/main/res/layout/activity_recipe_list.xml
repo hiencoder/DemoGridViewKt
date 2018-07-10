@@ -4,18 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gridview.MainActivity">
-
-    <GridView
-        android:id="@+id/gv_book"
+    tools:context=".listview.RecipeListActivity">
+    <ListView
+        android:id="@+id/lv_recipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:stretchMode="spacingWidthUniform"
-        android:numColumns="auto_fit"
-        android:gravity="center"
-        android:columnWidth="100dp"/>
+        android:divider="@drawable/divider"/>
 </android.support.constraint.ConstraintLayout>
