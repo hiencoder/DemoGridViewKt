@@ -1,7 +1,7 @@
 package com.example.hiennv.demogridview.listview
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.ListView
 import butterknife.BindView
 import butterknife.ButterKnife
@@ -18,5 +18,7 @@ class RecipeListActivity : AppCompatActivity() {
 
         recipeAdapter = RecipeAdapter(this,Recipe.parseJsonFromAsset("recipes.json",this))
         lvRecipe.adapter = recipeAdapter
+
+        lvRecipe.setOnItemClickListener { adapterView, view, position, l ->  }
     }
 }
