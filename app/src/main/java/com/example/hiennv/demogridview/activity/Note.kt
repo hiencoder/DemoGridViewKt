@@ -1,9 +1,10 @@
 package com.example.hiennv.demogridview.activity
 
+import java.io.Serializable
 import java.text.SimpleDateFormat
 import java.util.*
 
-class Note(val title: String, val content: String, val createdTime: String) {
+class Note(val title: String, val content: String, val createdTime: String) : Serializable{
     //Non use constructor -> use second constructor
 /*
     private var mTitle: String = ""
@@ -27,11 +28,11 @@ class Note(val title: String, val content: String, val createdTime: String) {
             return listNote
         }
 
-        private fun getTimeCreated(): String{
+        public fun getTimeCreated(): String{
             var result: String ?= null
             val timeCurrent = System.currentTimeMillis()
             //convert time -> millisecond
-            val date: Date = Date(timeCurrent * 1000L)
+            val date: Date = Date(timeCurrent)
             val sdf: SimpleDateFormat = SimpleDateFormat("E, MM-dd-yyyy HH:mm:ss a")
             sdf.timeZone = TimeZone.getTimeZone("GMT+7")
             result = sdf.format(date)
