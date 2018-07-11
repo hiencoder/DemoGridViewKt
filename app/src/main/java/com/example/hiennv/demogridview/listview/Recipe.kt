@@ -41,7 +41,7 @@ class Recipe(val titlte: String,
 
 
         private fun loadJsonFromAsset(filename: String, context: Context): String {
-            var jsonResult: String = ""
+            var jsonResult = ""
             try {
                 val inputStream: InputStream = context.assets.open(filename)
                 val size: Int = inputStream.available()
