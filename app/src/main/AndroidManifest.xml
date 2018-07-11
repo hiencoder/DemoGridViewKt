@@ -13,17 +13,19 @@
         android:theme="@style/AppTheme">
         <activity android:name=".gridview.MainActivity" />
         <activity android:name=".gridview.Main2Activity" />
-        <activity android:name=".listview.RecipeListActivity">
-
-        </activity>
+        <activity android:name=".listview.RecipeListActivity" />
         <activity android:name=".listview.DetailRecipeActivity" />
         <activity android:name=".recyclerview.RecyclerRecipeActivity">
+
+        </activity>
+        <activity android:name=".activity.ListNoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.AddNoteActivity"></activity>
     </application>
 
 </manifest>
